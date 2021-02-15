@@ -24,8 +24,14 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _HaberResponse_QNAME = new QName("http://SOAP.ups.edu.ec/", "HaberResponse");
-    private final static QName _Haber_QNAME = new QName("http://SOAP.ups.edu.ec/", "Haber");
+    private final static QName _Divicion_QNAME = new QName("http://SOAP.ups.edu.ec/", "divicion");
+    private final static QName _RestaResponse_QNAME = new QName("http://SOAP.ups.edu.ec/", "RestaResponse");
+    private final static QName _Resta_QNAME = new QName("http://SOAP.ups.edu.ec/", "Resta");
+    private final static QName _DivicionResponse_QNAME = new QName("http://SOAP.ups.edu.ec/", "divicionResponse");
+    private final static QName _Suma_QNAME = new QName("http://SOAP.ups.edu.ec/", "Suma");
+    private final static QName _Multiplicacion_QNAME = new QName("http://SOAP.ups.edu.ec/", "multiplicacion");
+    private final static QName _MultiplicacionResponse_QNAME = new QName("http://SOAP.ups.edu.ec/", "multiplicacionResponse");
+    private final static QName _SumaResponse_QNAME = new QName("http://SOAP.ups.edu.ec/", "SumaResponse");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: ec.edu.ups.soap
@@ -35,37 +41,139 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Haber }
+     * Create an instance of {@link Suma }
      * 
      */
-    public Haber createHaber() {
-        return new Haber();
+    public Suma createSuma() {
+        return new Suma();
     }
 
     /**
-     * Create an instance of {@link HaberResponse }
+     * Create an instance of {@link Multiplicacion }
      * 
      */
-    public HaberResponse createHaberResponse() {
-        return new HaberResponse();
+    public Multiplicacion createMultiplicacion() {
+        return new Multiplicacion();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link HaberResponse }{@code >}}
+     * Create an instance of {@link SumaResponse }
      * 
      */
-    @XmlElementDecl(namespace = "http://SOAP.ups.edu.ec/", name = "HaberResponse")
-    public JAXBElement<HaberResponse> createHaberResponse(HaberResponse value) {
-        return new JAXBElement<HaberResponse>(_HaberResponse_QNAME, HaberResponse.class, null, value);
+    public SumaResponse createSumaResponse() {
+        return new SumaResponse();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Haber }{@code >}}
+     * Create an instance of {@link MultiplicacionResponse }
      * 
      */
-    @XmlElementDecl(namespace = "http://SOAP.ups.edu.ec/", name = "Haber")
-    public JAXBElement<Haber> createHaber(Haber value) {
-        return new JAXBElement<Haber>(_Haber_QNAME, Haber.class, null, value);
+    public MultiplicacionResponse createMultiplicacionResponse() {
+        return new MultiplicacionResponse();
+    }
+
+    /**
+     * Create an instance of {@link Divicion }
+     * 
+     */
+    public Divicion createDivicion() {
+        return new Divicion();
+    }
+
+    /**
+     * Create an instance of {@link DivicionResponse }
+     * 
+     */
+    public DivicionResponse createDivicionResponse() {
+        return new DivicionResponse();
+    }
+
+    /**
+     * Create an instance of {@link Resta }
+     * 
+     */
+    public Resta createResta() {
+        return new Resta();
+    }
+
+    /**
+     * Create an instance of {@link RestaResponse }
+     * 
+     */
+    public RestaResponse createRestaResponse() {
+        return new RestaResponse();
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Divicion }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://SOAP.ups.edu.ec/", name = "divicion")
+    public JAXBElement<Divicion> createDivicion(Divicion value) {
+        return new JAXBElement<Divicion>(_Divicion_QNAME, Divicion.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link RestaResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://SOAP.ups.edu.ec/", name = "RestaResponse")
+    public JAXBElement<RestaResponse> createRestaResponse(RestaResponse value) {
+        return new JAXBElement<RestaResponse>(_RestaResponse_QNAME, RestaResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Resta }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://SOAP.ups.edu.ec/", name = "Resta")
+    public JAXBElement<Resta> createResta(Resta value) {
+        return new JAXBElement<Resta>(_Resta_QNAME, Resta.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link DivicionResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://SOAP.ups.edu.ec/", name = "divicionResponse")
+    public JAXBElement<DivicionResponse> createDivicionResponse(DivicionResponse value) {
+        return new JAXBElement<DivicionResponse>(_DivicionResponse_QNAME, DivicionResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Suma }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://SOAP.ups.edu.ec/", name = "Suma")
+    public JAXBElement<Suma> createSuma(Suma value) {
+        return new JAXBElement<Suma>(_Suma_QNAME, Suma.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Multiplicacion }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://SOAP.ups.edu.ec/", name = "multiplicacion")
+    public JAXBElement<Multiplicacion> createMultiplicacion(Multiplicacion value) {
+        return new JAXBElement<Multiplicacion>(_Multiplicacion_QNAME, Multiplicacion.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link MultiplicacionResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://SOAP.ups.edu.ec/", name = "multiplicacionResponse")
+    public JAXBElement<MultiplicacionResponse> createMultiplicacionResponse(MultiplicacionResponse value) {
+        return new JAXBElement<MultiplicacionResponse>(_MultiplicacionResponse_QNAME, MultiplicacionResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SumaResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://SOAP.ups.edu.ec/", name = "SumaResponse")
+    public JAXBElement<SumaResponse> createSumaResponse(SumaResponse value) {
+        return new JAXBElement<SumaResponse>(_SumaResponse_QNAME, SumaResponse.class, null, value);
     }
 
 }
