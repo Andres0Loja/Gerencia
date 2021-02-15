@@ -9,6 +9,7 @@ import ec.edu.ups.crud.Persona;
 import ec.edu.ups.crud.SirvePersona;
 import ec.edu.ups.crud.SirvePersonaService;
 import java.net.URL;
+import javax.swing.JOptionPane;
 import javax.xml.namespace.QName;
 
 /**
@@ -40,6 +41,7 @@ private static final QName SERVICE_NAME = new QName("http://CRUD.ups.edu.ec/", "
         btnAceptar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Login");
 
         jLabel1.setText("cedula");
 
@@ -104,12 +106,8 @@ private static final QName SERVICE_NAME = new QName("http://CRUD.ups.edu.ec/", "
             Noticias n=new Noticias();
             n.setVisible(true);
         }else{
-            System.out.println("h");
-        }
-
-
-
-        
+            JOptionPane.showMessageDialog(null, "Usuario Creado");
+        }  
     }//GEN-LAST:event_btnAceptarActionPerformed
 
     /**

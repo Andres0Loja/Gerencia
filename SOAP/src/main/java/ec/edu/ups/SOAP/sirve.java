@@ -7,13 +7,23 @@ import javax.jws.WebService;
 public class sirve {
 
 	@WebMethod
-	public String Haber() {
-		return "Sirve";
+	public double Suma(double a, double b) {
+		double sum=a+b;
+		return sum;
 	}
 	@WebMethod
-	public String Suma(int a, int b) {
-		int sum=a+b;
-		System.out.println(sum);
-		return sum+"";
+	public double Resta(double a, double b) {
+		double res=a-b;
+		return res;
+	}
+	@WebMethod
+	public double multiplicacion(double a, double b) {
+		double mul=a*b;
+		return mul;
+	}
+	@WebMethod
+	public double divicion(double a, double b) {
+		double div=a/b;
+		return div;
 	}
 }
